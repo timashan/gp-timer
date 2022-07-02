@@ -58,10 +58,10 @@
   position: absolute;
 }
 
-@media (max-width: 50em) {
+/* @media (max-width: 50em) {
   .timer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
+} */

@@ -45,8 +45,8 @@
 
 @media screen and (max-width: 50em) {
   .clock {
-    font-size: 1.8rem;
-    max-width: 34rem;
+    font-size: 2.2rem;
+    max-width: 38rem;
   }
 
   .days-left {
