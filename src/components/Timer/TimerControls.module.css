@@ -1,0 +1,18 @@
+.controls {
+}
+
+.control {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  display: flex;
+  gap: 2rem;
+}
+
+.control input {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  border: 0;
+}

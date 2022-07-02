@@ -1,0 +1,29 @@
+.nav {
+  margin: 5rem 2rem;
+}
+
+.nav button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid currentColor;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: inherit;
+  height: 10rem;
+  width: 10rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.nav button:hover {
+  background-color: white;
+  color: #111;
+}
+
+@media (max-width: 90em) {
+  .nav {
+    display: flex;
+    margin: 0 0 5rem 0;
+  }
+}

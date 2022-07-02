@@ -1,0 +1,46 @@
+.form-container {
+  transition: all 0.5s;
+  padding: 0 5rem;
+}
+
+.form button {
+  font-family: inherit;
+  padding: 1rem 4rem;
+  font-size: 3rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid currentColor;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.form button:hover {
+  background-color: white;
+  color: #111;
+}
+
+.control {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  display: flex;
+  gap: 2rem;
+}
+
+.control input,
+textarea {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border: 0;
+  width: 80%;
+  color: white;
+  border: 1px solid currentColor;
+  background-color: transparent;
+}
+
+.control textarea {
+  height: 12rem;
+}

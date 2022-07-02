@@ -1,0 +1,67 @@
+.timer {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  align-items: center;
+  row-gap: 0.8rem;
+  column-gap: 2rem;
+  padding: 1rem 5rem;
+}
+
+.completed {
+  opacity: 0.3;
+}
+
+.time {
+  display: flex;
+  gap: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  grid-row: 2;
+}
+
+.days-remain {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.actions {
+  display: flex;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.actions button {
+  background-color: transparent;
+  font-size: 2rem;
+  color: white;
+  border: 1px solid currentColor;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.actions button:hover {
+  background-color: white;
+  color: #111;
+}
+
+.chart {
+  position: relative;
+  /* background-color: white; */
+  width: 100%;
+  height: 5px;
+}
+
+.chart__completed {
+  height: 5px;
+  background-color: red;
+  position: absolute;
+}
+
+@media (max-width: 50em) {
+  .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

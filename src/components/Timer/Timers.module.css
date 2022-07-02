@@ -1,0 +1,6 @@
+.timers {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  transition: all 0.5s;
+}

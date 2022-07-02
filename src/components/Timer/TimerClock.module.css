@@ -1,0 +1,56 @@
+.clock {
+  border: 1px solid white;
+  padding: 5rem;
+  margin: 5rem 5rem 3rem 5rem;
+  font-size: 3rem;
+  width: 50rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+
+.clock.glow {
+  border: 1px solid rgb(202, 0, 0);
+  animation: glow 5s infinite linear;
+}
+
+.days-left {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 5rem;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 1rem rgb(168, 25, 25);
+  }
+  50% {
+    box-shadow: 0 0 5rem rgb(168, 25, 25);
+  }
+  to {
+    box-shadow: 0 0 1rem rgb(168, 25, 25);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .clock {
+    font-size: 2.2rem;
+    max-width: 38rem;
+    margin: 2rem;
+  }
+
+  .days-left {
+    font-size: 4rem;
+  }
+}

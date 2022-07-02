@@ -1,0 +1,40 @@
+.timer {
+  display: flex;
+}
+
+.frame {
+  border: 1px solid #aaa;
+  width: 100%;
+  height: 80vh;
+  margin: 3rem 3rem 0 0;
+  padding: 5rem 0;
+  animation: appear 1s;
+  animation: appear 0.5s;
+  overflow: auto;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+}
+
+@media (max-width: 90em) {
+  html {
+    font-size: 50%;
+  }
+  .timer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .frame {
+    margin: 5rem;
+  }
+}
+
+/* @media (max-width: 50) {
+  .frame {
+    margin: 0;
+  }
+} */
