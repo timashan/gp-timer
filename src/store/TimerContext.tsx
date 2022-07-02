@@ -26,7 +26,19 @@ export default TimerContext;
 
 const getPerssistedData = () => {
   const data = localStorage.getItem('timers');
-  const convData: Timer[] = data ? JSON.parse(data) : [];
+  const convData: Timer[] = data
+    ? JSON.parse(data)
+    : [
+        {
+          id: 'm1',
+          title: 'AL',
+          endTime: '2022-10-14',
+          main: true,
+          completed: false,
+          desc: 'u better pass',
+          startTime: new Date(),
+        },
+      ];
   convData.forEach((timer) => {
     timer.endTime = new Date(timer.endTime);
     timer.startTime = new Date(timer.startTime);
