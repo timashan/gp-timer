@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gp-timer/static/css/main.fbe1a73e.css",
-    "main.js": "/gp-timer/static/js/main.bddf3e90.js",
-    "index.html": "/gp-timer/index.html",
-    "main.fbe1a73e.css.map": "/gp-timer/static/css/main.fbe1a73e.css.map",
-    "main.bddf3e90.js.map": "/gp-timer/static/js/main.bddf3e90.js.map"
+    "main.css": "./static/css/main.fbe1a73e.css",
+    "main.js": "./static/js/main.73fbfe9b.js",
+    "index.html": "./index.html",
+    "main.fbe1a73e.css.map": "./static/css/main.fbe1a73e.css.map",
+    "main.73fbfe9b.js.map": "./static/js/main.73fbfe9b.js.map"
   },
   "entrypoints": [
     "static/css/main.fbe1a73e.css",
-    "static/js/main.bddf3e90.js"
+    "static/js/main.73fbfe9b.js"
   ]
 }
