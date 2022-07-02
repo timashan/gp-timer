@@ -40,3 +40,15 @@ body {
 .fade-exit-active {
   opacity: 0;
 }
+
+@media (max-width: 90em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 30%;
+  }
+}

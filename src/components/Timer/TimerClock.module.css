@@ -45,12 +45,11 @@
 
 @media screen and (max-width: 50em) {
   .clock {
-    font-size: 2.2rem;
-    max-width: 38rem;
-    margin: 2rem;
+    font-size: 1.8rem;
+    max-width: 34rem;
   }
 
   .days-left {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }

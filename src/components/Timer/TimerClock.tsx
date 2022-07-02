@@ -2,17 +2,21 @@ import { FC } from 'react';
 import useTimer from '../../hooks/use-timer';
 import classes from './TimerClock.module.css';
 import { padStart, getRemainingTime } from '../../Helpers/time';
+import Timer from '../../models/Timer';
 
-const TimerClock: FC<{ date: Date | null }> = (props) => {
-  const { date: endTime } = props;
+const TimerClock: FC<{ timer: Timer | null }> = (props) => {
+  const { timer } = props;
+  const timerVal = useTimer(timer?.completed ? null : timer?.endTime || null);
 
-  const timer = useTimer(endTime);
-
-  const { mon, days, hrs, mins, secs, daysRemain } = getRemainingTime(timer);
+  const { mon, days, hrs, mins, secs, daysRemain } = getRemainingTime(timerVal);
 
   return (
     <div>
-      <div className={`${classes.clock} ${endTime && classes.glow}`}>
+      <div
+        className={`${classes.clock} ${
+          timer?.endTime && !timer?.completed && classes.glow
+        }`}
+      >
         <h1 className={classes.month}>{mon} Months</h1>
         <h1 className={classes.date}>{days} Days</h1>
         <h1 className={classes.hours}>{hrs} Hours</h1>

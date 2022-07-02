@@ -27,3 +27,9 @@
     margin: 0 0 5rem 0;
   }
 }
+
+@media (max-width: 30em) {
+  .nav button {
+    font-size: 2rem;
+  }
+}

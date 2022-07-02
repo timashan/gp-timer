@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const useTimer = (endTime: Date | null) => {
-  const [timer, setTimer] = useState<Date>(new Date(1000));
+  const [timer, setTimer] = useState<Date>(new Date(1500));
 
   useEffect(() => {
     if (!endTime) return;

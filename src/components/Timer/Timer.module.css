@@ -21,20 +21,12 @@
 }
 
 @media (max-width: 90em) {
-  html {
-    font-size: 50%;
-  }
   .timer {
     flex-direction: column;
     align-items: center;
   }
   .frame {
     margin: 5rem;
+    height: 50vh;
   }
 }
-
-/* @media (max-width: 50) {
-  .frame {
-    margin: 0;
-  }
-} */

@@ -19,7 +19,7 @@ const Timer: FC = (props) => {
 
   return (
     <div className={classes.timer}>
-      <TimerClock date={mainTimer?.endTime || null} />
+      <TimerClock timer={mainTimer || null} />
 
       <div className={classes.frame}>
         <TransitionGroup>

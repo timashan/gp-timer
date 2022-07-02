@@ -20,7 +20,6 @@ const TimerItem: FC<{ timer: Timer }> = (props) => {
     getRemainingTime(timer);
 
   const removeTimerHandler = () => timerCtx.removeTimer(id);
-
   const toggleMainHandler = () => timerCtx.setMain(id);
 
   let completedLen = '0px';

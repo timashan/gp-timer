@@ -7,7 +7,7 @@ const App: FC = () => {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/gp-timer" element={<HomePage />}></Route>
       </Routes>
     </Layout>
   );
